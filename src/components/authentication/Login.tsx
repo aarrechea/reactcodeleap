@@ -73,6 +73,12 @@ const Login = () => {
     // Effects
     useEffect(() => {
         if (location.state?.registered) {
+            /*
+            This useEffect is used to show a success message when the user registers.
+            If the user registers successfully, the location state will have a registered property.
+            For this reason, the location will be updated to remove the registered property to not be
+            shown again on reload.
+            */
             setMainTitle({
                 title: "Successfully registered!",
                 style: { color: "green" }
@@ -97,7 +103,18 @@ const Login = () => {
                 style: {}
             });
         }
-    }, [location.state, navigate, location.pathname])
+    }, [location.state, navigate, location.pathname]);
+
+
+    // Auto-clear error after 3 seconds
+    useEffect(() => {
+        if (error) {
+            const timer = setTimeout(() => {
+                setError(null);
+            }, 3000);
+            return () => clearTimeout(timer);
+        }
+    }, [error]);
 
 
     // Render

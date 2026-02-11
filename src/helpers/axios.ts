@@ -58,32 +58,21 @@ const handleAuthError = async (error: any) => {
     if (error.response?.status === 401 && !error.config._retry) {
         error.config._retry = true;
 
-        console.log("Intercepted 401: Refreshing token...");
-
         const refreshToken = localStorage.getItem('refreshToken');
 
         if (!refreshToken) {
-            console.log("No refresh token, throwing error");
             throw error;
         }
         try {
             const response = await refreshAuthLogic();
             const accessToken = response.data.access;
 
-            console.log("Refreshed token successfully");
-
             localStorage.setItem('accessToken', accessToken);
-
             axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
-
             error.config.headers['Authorization'] = `Bearer ${accessToken}`;
-
-            console.log("Retrying original request...");
-
             return axiosInstance(error.config);
 
         } catch (error) {
-            console.log("Refresh failed or retry failed", error);
             localStorage.removeItem("accessToken");
             localStorage.removeItem("refreshToken");
             localStorage.removeItem("user");
