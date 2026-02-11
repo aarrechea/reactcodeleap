@@ -1,0 +1,125 @@
+/* Fixed navbar */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: 1000;
+    height: 5rem;
+    background: #7695EC;
+}
+
+
+
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #7695EC;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* Navbar title */
+.navbar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.navbar-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 3rem;
+}
+
+
+
+/* Navbar user info */
+.navbar-user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.navbar-user-info label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.navbar-user-info input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+
+/* Navbar logout button */
+.navbar-logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.navbar-logout-button button {
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #7695EC;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 8rem;
+
+    &:hover {
+        background-color: #7695EC;
+        color: #fff;
+        transition: all 0.3s ease;
+        border: 3px solid #fff;
+    }
+}
+
+
+
+/* Media queries for a screen smaller than 6.1 inches (mobile devices) */
+@media (max-width: 414px) {
+    .navbar-container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    .navbar-user-info {
+        width: 70%;
+    }
+
+    .navbar-logout-button {
+        width: 30%;
+    }
+}

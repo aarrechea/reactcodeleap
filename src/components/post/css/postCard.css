@@ -1,0 +1,172 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* Post card main container */
+.post-card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 60%;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    height: 20rem;
+}
+
+
+
+/* Post card header */
+.post-card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #7695EC;
+    padding: 1.2rem;
+    border-radius: 1rem 1rem 0 0;
+    height: 5rem;
+}
+
+.post-card-header h1 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    width: 80%;
+}
+
+
+
+/* Icons */
+.post-card-heart-icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.post-card-heart-icon-container p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0 0.5rem 0 0;
+    text-align: left;
+}
+
+.post-card-header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    gap: 2rem;
+    color: white;
+}
+
+.post-card-heart-icon,
+.post-card-delete-icon,
+.post-card-edit-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    fill: white;
+    /* SVG fill color */
+    transition: all 0.3s ease;
+}
+
+.post-card-delete-icon:hover {
+    fill: red;
+    /* Changes the SVG drawing color to red */
+    transform: scale(1.1);
+}
+
+.post-card-edit-icon:hover {
+    fill: blue;
+    /* Changes the SVG drawing color to blue */
+    transform: scale(1.1);
+}
+
+.post-card-heart-icon:hover {
+    fill: red;
+    /* Changes the SVG drawing color to red */
+    transform: scale(1.1);
+}
+
+
+
+/* Post card content */
+.post-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.post-card-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.post-card-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.post-card-content-header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    margin: 0;
+    text-align: left;
+}
+
+.post-card-content-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    overflow-y: auto;
+    height: 12rem;
+}
+
+.post-card-content-body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+/* Media queries */
+@media (max-width: 414px) {
+    .post-card-main {
+        width: 90%;
+    }
+
+    .post-card-content-body {
+        height: 11rem;
+    }
+}

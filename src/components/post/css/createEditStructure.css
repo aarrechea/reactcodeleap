@@ -1,0 +1,122 @@
+/* Create edit structure header */
+.create-edit-structure-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.create-edit-structure-header h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+/* Create edit structure title */
+.create-edit-structure-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.create-edit-structure-title label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    align-self: flex-start;
+}
+
+.create-edit-structure-title input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+/* Create edit structure content */
+.create-edit-structure-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.create-edit-structure-content label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    align-self: flex-start;
+}
+
+.create-edit-structure-content textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 7.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    resize: none;
+}
+
+
+/* Create edit structure button */
+.create-edit-structure-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 0.15rem;
+    column-gap: 1rem;
+    height: 3rem;
+}
+
+.create-edit-structure-button-execute,
+.create-edit-structure-button-close {
+    border-radius: 8px;
+    border: none;
+    background-color: #7695EC;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 8rem;
+    height: 3rem;
+}
+
+.create-edit-structure-button-execute:hover,
+.create-edit-structure-button-close:hover {
+    background-color: #fff;
+    color: #7695EC;
+    transition: all 0.3s ease;
+    border: 3px solid #7695EC;
+}
+
+
+
+/* Media queries for a screen smaller than 6.1 inches (mobile devices) */
+@media (max-width: 414px) {
+    .create-edit-structure-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

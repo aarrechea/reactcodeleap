@@ -1,0 +1,105 @@
+/* Modal hidden */
+.post-edit-modal-hidden {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+
+
+/* Modal main */
+.post-edit-modal-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 7rem auto 0 auto;
+    height: 25rem;
+    width: 65%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    padding: 1.2rem;
+}
+
+
+/* Modal header */
+.post-edit-modal-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.post-edit-modal-header h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+/* Title */
+.post-edit-modal-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    height: 5rem;
+}
+
+.post-edit-modal-title label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    align-self: flex-start;
+}
+
+.post-edit-modal-title input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+
+/* Content */
+.post-edit-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    height: 15rem;
+}
+
+.post-edit-modal-content label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    align-self: flex-start;
+}

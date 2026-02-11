@@ -1,0 +1,120 @@
+/* Post page main container */
+.post-page-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 15rem;
+    /* Prevent body scroll */
+}
+
+
+
+/* Infinite scroll trigger */
+.load-more-trigger {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-text {
+    color: #7695EC;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+/* Username filter section */
+.filter-section {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.filter-section-input {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+}
+
+.filter-section-input input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 3px solid #7695EC;
+    font-size: 1rem;
+    width: 300px;
+    transition: border-color 0.3s ease;
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.filter-section-input input:focus {
+    outline: none;
+    border-color: #7695EC;
+    box-shadow: 0 0 0 2px rgba(118, 149, 236, 0.2);
+}
+
+.filter-section-button {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+}
+
+.filter-section-button button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.filter-section-button button:hover {
+    background-color: #c82333;
+}
+
+
+/* Media queries for a screen smaller than 6.1 inches (mobile devices) */
+@media (max-width: 414px) {
+    .filter-section {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .filter-section-input {
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+    }
+
+    .filter-section-input input {
+        width: 90%;
+        height: 3.5rem;
+    }
+
+    .filter-section-button {
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+}
