@@ -87,7 +87,10 @@ const handleAuthError = async (error: any) => {
             localStorage.removeItem("accessToken");
             localStorage.removeItem("refreshToken");
             localStorage.removeItem("user");
-            throw error;
+            localStorage.removeItem("username");
+            // Redirect to login page to clear Redux state via page reload
+            window.location.href = '/';
+            return Promise.reject(error);
         }
     }
     throw error;
