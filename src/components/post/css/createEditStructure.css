@@ -129,6 +129,10 @@ screen and (max-width: 600px) and (min-resolution: 192dpi) {
         height: 70%;
     }
 
+    .create-edit-structure-content textarea {
+        height: 95%;
+    }
+
     .create-edit-structure-button {
         width: 100%;
         justify-content: center;
