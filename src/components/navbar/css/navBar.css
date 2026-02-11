@@ -142,4 +142,8 @@ screen and (max-width: 600px) and (min-resolution: 192dpi) {
     .navbar-logout-button {
         width: 30%;
     }
+
+    .navbar-logout-button button {
+        margin-right: 0.5rem;
+    }
 }
