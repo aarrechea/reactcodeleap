@@ -138,7 +138,16 @@
 
 
 /* Media queries for a screen smaller than 6.1 inches (mobile devices) */
-@media (max-width: 414px) {
+/* @media (max-width: 414px) {
+    .create-post-main {
+        width: 90%;
+        height: 25rem;
+    }
+} */
+
+/* Media query for high-density screens smaller than ~7 inches (approx 600px logical width) */
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 600px) and (min-resolution: 192dpi) {
     .create-post-main {
         width: 90%;
         height: 25rem;

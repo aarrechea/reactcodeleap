@@ -105,7 +105,27 @@
 
 
 /* Media queries for a screen smaller than 6.1 inches (mobile devices) */
-@media (max-width: 414px) {
+/* @media (max-width: 414px) {
+    .navbar-container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    .navbar-user-info {
+        width: 70%;
+    }
+
+    .navbar-logout-button {
+        width: 30%;
+    }
+} */
+
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 600px) and (min-resolution: 192dpi) {
     .navbar-container {
         width: 100%;
         padding: 0.5rem;

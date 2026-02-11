@@ -161,7 +161,19 @@
 
 
 /* Media queries */
-@media (max-width: 414px) {
+/* @media (max-width: 414px) {
+    .post-card-main {
+        width: 90%;
+    }
+
+    .post-card-content-body {
+        height: 11rem;
+    }
+}*/
+
+/* Media query for high-density screens smaller than ~7 inches (approx 600px logical width) */
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 600px) and (min-resolution: 192dpi) {
     .post-card-main {
         width: 90%;
     }

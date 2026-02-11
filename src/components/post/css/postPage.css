@@ -92,7 +92,36 @@
 
 
 /* Media queries for a screen smaller than 6.1 inches (mobile devices) */
-@media (max-width: 414px) {
+/* @media (max-width: 414px) {
+    .filter-section {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .filter-section-input {
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+    }
+
+    .filter-section-input input {
+        width: 90%;
+        height: 3.5rem;
+    }
+
+    .filter-section-button {
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+} */
+
+/* Media query for high-density screens smaller than ~7 inches (approx 600px logical width) */
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 600px) and (min-resolution: 192dpi) {
     .filter-section {
         flex-direction: column;
         gap: 0;
