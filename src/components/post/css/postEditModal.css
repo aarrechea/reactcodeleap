@@ -103,3 +103,26 @@
     color: #000000;
     align-self: flex-start;
 }
+
+
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 600px) and (min-resolution: 192dpi) {
+    .post-edit-modal-main {
+        width: 90%;
+        height: 25rem;
+    }
+
+    .post-edit-modal-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .post-edit-modal-title label,
+    .post-edit-modal-content label {
+        font-size: 0.9rem;
+    }
+
+    .post-edit-modal-title input,
+    .post-edit-modal-content textarea {
+        font-size: 0.9rem;
+    }
+}

@@ -224,3 +224,52 @@
         transform: translateX(5px);
     }
 }
+
+
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 600px) and (min-resolution: 192dpi) {
+    .register-main {
+        width: 20rem;
+    }
+
+    .register-container {
+        padding: 2rem;
+    }
+
+    .register-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .form-group label {
+        font-size: 0.8rem;
+    }
+
+    .form-group input {
+        font-size: 0.9rem;
+    }
+
+    .error-message {
+        font-size: 0.8rem;
+    }
+
+    .register-show-password-btn {
+        font-size: 0.8rem;
+    }
+
+    .register-btn {
+        font-size: 1rem;
+    }
+
+    .register-btn-disabled {
+        font-size: 1rem;
+    }
+
+    .register-link,
+    .login-link {
+        font-size: 0.8rem;
+    }
+}
