@@ -181,4 +181,22 @@ screen and (max-width: 600px) and (min-resolution: 192dpi) {
     .post-card-content-body {
         height: 11rem;
     }
+
+    /* Adjust header layout for mobile */
+    .post-card-header h1 {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+
+    .post-card-header-icons {
+        width: 40%;
+        gap: 0.5rem;
+    }
+
+    .post-card-heart-icon,
+    .post-card-delete-icon,
+    .post-card-edit-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
