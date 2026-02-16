@@ -20,7 +20,7 @@ const NavBar = () => {
         <div className="fixed-navbar">
             <div className="navbar-container">
                 <div className="navbar-title">
-                    <h3>CodeLeap Network</h3>
+                    <h3>Super Company</h3>
                 </div>
 
                 <div className="navbar-user-info">
